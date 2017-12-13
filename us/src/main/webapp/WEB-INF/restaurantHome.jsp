@@ -25,7 +25,7 @@
 	</form>
 	<br>
 	<h4>Cuisine</h4>
-	<form action="UrbanspoonController" method="post">
+	<form action="AddCuisine" method="post">
 		<input type="hidden" name="action" value="cuisine"> <label>Name</label>
 		<input type="text" name="name"><br> <label>Country</label>
 		<input type="text" name="country"><br> <input
@@ -34,7 +34,7 @@
 	</form>
 	<br>
 	<h4>Recipe</h4>
-	<form action="UrbanspoonController" method="post">
+	<form action="Add_Recipe" method="post">
 
 		<input type="hidden" name="action" value="recipe"> <label>Name</label>
 		<input type="text" name="name"><br> <label>Description</label>

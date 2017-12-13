@@ -138,7 +138,7 @@
 				<input type="submit" value="login">
 			</form>
 		</div>
-		<div id="user_registration">
+		<div id="user_registration1">
 			<h3>User Register</h3>
 			<form:form action="user_registration1" method="Post" modelAttribute="user">
 			Name:<form:input path="name"/><br>
@@ -151,7 +151,7 @@
 			<input type="submit" value="register">
 			</form:form>
 		</div>
-+
+		
 		<div id="restaurant_registration">
 			<h3>Restaurant Register</h3>
 			<form:form action="restaurantRegistration" method="Post" modelAttribute="restaurant" enctype="multipart/form-data">

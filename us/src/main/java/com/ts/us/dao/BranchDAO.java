@@ -7,9 +7,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.ts.us.dto.Branch;
 import com.ts.us.exception.UrbanspoonException;
 
+@Component
 public class BranchDAO {
 
 	public boolean addImage(long branchId, String fileName) throws UrbanspoonException {

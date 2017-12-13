@@ -5,9 +5,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.springframework.stereotype.Component;
+
 import com.ts.us.dto.User;
 import com.ts.us.exception.UrbanspoonException;
 
+@Component
 public class UserDAO {
 
 	public User insert(User user) throws UrbanspoonException {

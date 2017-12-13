@@ -8,9 +8,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.ts.us.dto.Restaurant;
 import com.ts.us.exception.UrbanspoonException;
 
+@Component
 public class RestaurantDAO {
 
 	public List<Restaurant> getRestaurants(boolean includeBranches) throws UrbanspoonException {

@@ -29,7 +29,7 @@
 											<td>${branch.country}</td>
 											<td>${branch.postalCode}</td>
 											<td><a
-												href="UrbanspoonController?action=branch_feedback&restaurant_id=${restaurant.id}&branch_id=${branch.id}">Add
+												href="branch_feedback?restaurant_id=${restaurant.id}&branch_id=${branch.id}">Add
 													FeedBack</a></td>
 											<td>
 												<table border="1">
@@ -56,7 +56,7 @@
 																			<td>${recipe.description}</td>
 																			<td>${recipe.price}</td>
 																			<td><a
-																				href="UrbanspoonController?action=recipe_feedback&recipe_id=${recipe.id}&branch_id=${branch.id}&restaurant_id=${restaurant.id}">Add
+																				href="recipe_feedback?recipe_id=${recipe.id}&branch_id=${branch.id}&restaurant_id=${restaurant.id}">Add
 																					FeedBack</a></td>
 																		</tr>
 																	</c:forEach>
@@ -79,7 +79,7 @@
 			<div id="branch_feedback">
 				<h3>Branch Feedback</h3>
 				<form name="branch_feedback_form" method="post"
-					action="UrbanspoonController">
+					action="branch_feedback_form">
 					<input type="hidden" name="action" value="branch_feedback"><br>
 					Restaurant:
 					<h3>${restaurant.name}</h3>
@@ -108,7 +108,7 @@
 			<div id="recipe_feedback">
 				<h3>Recipe Feedback</h3>
 				<form name="recipe_feedback_form" method="post"
-					action="UrbanspoonController">
+					action="recipe_feedback_form">
 					<input type="hidden" name="action" value="recipe_feedback"><br>
 					Restaurant:
 					<h3>${restaurant.name}</h3>

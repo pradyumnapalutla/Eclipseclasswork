@@ -8,9 +8,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.ts.us.dto.FeedbackType;
 import com.ts.us.exception.UrbanspoonException;
 
+@Component
 public class FeedbackTypeDAO {
 	public List<FeedbackType> getFeedbackTypes() throws UrbanspoonException {
 		Connection connection = null;
